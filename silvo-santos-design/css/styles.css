@@ -3,14 +3,13 @@ html {
     background-color: #DDD;
 }
 
-.container{
+main{
     max-width: 1200px;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 50px;
+    margin: 20px auto;
     padding: 20px 50px;
     background-color: #FFF;
+    border-radius: 25px;
 }
 
 .destaque{
@@ -19,59 +18,70 @@ html {
 
 /* cabecalho */
 
-.cabecalho{
+header{
     text-align: center;
 }
 
-.titulo-principal {
+h1.principal {
     font-size: 40px;
 }
 
-.paragrafo-principal{
+p.principal{
     font-style: italic;
 }
 
 /* corpo do site */
 
-.img-destaque{
+figure{
     text-align: center;
     margin-top: 30px;
 }
 
+figure img{
+    border-radius: 5px;
+    width: 80%;
+}
+
+figure figcaption{
+    font-style: italic;
+    font-weight: bold;
+}
+
 /* biografia container */
 
-.biografia-container{
+section.biografia{
     padding: 25px 0;
     margin: 25px 0;
     border-top: 1px dashed #DDD;
     border-bottom: 1px dashed #DDD;
+    text-align: justify;
 }
 
 /* citações */
 
-.frase-container{
+article.frase{
     background-color: #DDD;
     padding: 30px;
 }
 
-.frase-container blockquote{
+article.frase blockquote{
     font-weight: 600;
     font-size: 30px;
 }
 
-.frase-container p{
+article.frase p{
     font-style: italic;
 }
 
 /* curiosidades */
 
-.curiosidades-container {
+section.curiosidades {
     padding: 25px 0;
     margin: 25px 0;
     border-top: 1px dashed #DDD;
     border-bottom: 1px dashed #DDD;
 }
 
-.curiosidades-container li{
+section.curiosidades li{
     height: 30px;
 }
