@@ -29,27 +29,26 @@ main {
 
 .rating{
     background-color: hsl(213, 19%, 18%);
-    width: 480px;
-    border-radius: 25px;
-    padding: 30px;
+    width: 450px;
+    border-radius: 2rem;
+    padding: 2.6rem;
 }
 
 .rating-icon-container {
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 50%;
+    padding: 1rem;
+    height: 2.8rem;
+    width: 2.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(213, 19%, 25%);
-    padding: 1rem;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
 }
 
 .rating-icon-container .rating-icon{
     width: 1.5rem;
 }
-
-form h2 {
+rating-title {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
 }
