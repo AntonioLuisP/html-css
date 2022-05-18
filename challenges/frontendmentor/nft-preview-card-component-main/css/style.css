@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root{
+    --veryDarkBlueMain: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--veryDarkBlueMain);
+    color: var(--white);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nft-card {
+    background-color: var(--veryDarkBlueCard);
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.nft-image-container {
+    width: 100%;
+    position: relative;
+}
+
+.nft-image {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.invisible{
+    visibility: hidden;
+    background-color: hsla(178, 100%, 50%, 0.867);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    opacity: 0;
+
+}
+
+.nft-image-container:hover .invisible{
+    visibility: visible;
+    opacity: 1;
+}
+
+.nft-title {
+    font-weight: 700;
+}
+
+.nft-title:hover {
+    color: var(--cyan);
+}
+
+.nft-description {
+    text-align: left;
+    color: var(--softBlue);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.nft-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nft-price,
+.nft-time-remaining {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nft-price {
+    color: var(--cyan);
+}
+
+.nft-time-remaining {
+    color: var(--softBlue);
+}
+
+.nft-line-divisor{
+    width: 100%;
+    height: 1px;
+    background-color: var(--veryDarkBlueLine);
+}
+
+.nft-author-container{
+    display: flex;
+    align-items: center;
+    color: var(--softBlue);
+    letter-spacing: 1px;
+}
+
+.nft-author-avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.attribution {
+    text-align: center;
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--cyan);
+}
