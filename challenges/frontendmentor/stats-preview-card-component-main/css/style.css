@@ -1,17 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-:root{
-    --veryDarkBlueMain: hsl(217, 54%, 11%);
-    --veryDarkBlueCard: hsl(216, 50%, 16%);
-    --veryDarkBlueLine: hsl(215, 32%, 27%);
+:root {
+    --slightlyTransparentWhiteMain: hsla(0, 0%, 100%, 0.75);
+    --slightlyTransparentWhiteStat: hsla(0, 0%, 100%, 0.6);
+    --darkDesaturatedBlue: hsl(244, 38%, 16%);
+    --veryDarkBlue: hsl(233, 47%, 7%);
+    --softViolet: hsl(277, 64%, 61%);
     --white: hsl(0, 0%, 100%);
-    --softBlue: hsl(215, 51%, 70%);
-    --cyan: hsl(178, 100%, 50%);
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
