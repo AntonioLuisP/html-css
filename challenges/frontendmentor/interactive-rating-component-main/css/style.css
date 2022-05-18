@@ -13,31 +13,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-main {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     row-gap: 30px;
 }
 
-.rating{
-    background-color: hsl(213, 19%, 18%);
+.rating {
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 9%, 11%));
     border-radius: 2rem;
     padding: 2.6rem;
 }
 
-.rating-form{
-    width: 450px;
+.rating-form {
+    width: 430px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .rating-icon-container {
-    background-color: hsl(213, 19%, 25%);
+    background-color: hsl(210, 15%, 21%);
     border-radius: 50%;
     padding: 1rem;
     height: 2.8rem;
@@ -47,8 +41,8 @@ main {
     justify-content: center;
 }
 
-.rating-icon-container .rating-icon{
-    width: 1.5rem;
+.rating-icon-container .rating-icon {
+    width: 0.8rem;
 }
 
 .rating-title {
@@ -56,9 +50,11 @@ main {
     font-weight: 700;
 }
 
-.rating-description{
+.rating-description {
     font-size: 15px;
     color: hsl(217, 12%, 63%);
+    text-align: left;
+    line-height: 22px;
 }
 
 .rating-options {
@@ -79,10 +75,8 @@ main {
     padding: 10px;
     border-radius: 50%;
     border: none;
-    background-color: hsl(214, 15%, 28%);
+    background-color: hsl(210, 15%, 21%);
     color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-
 }
 
 .rating-option:hover {
@@ -91,8 +85,9 @@ main {
     cursor: pointer;
 }
 
-.rating-selected{
+.rating-selected {
     background-color: hsl(216, 12%, 54%);
+    font-weight: 700;
     color: hsl(0, 0%, 100%);
 }
 
@@ -114,12 +109,12 @@ main {
 .rating-submit:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
-    transition: background 0.4s ease, color 0.4s ease; 
+    transition: background 0.4s ease, color 0.4s ease;
     cursor: pointer;
 }
 
-.rating-success{
-    width: 450px;
+.rating-success {
+    width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,18 +122,29 @@ main {
     gap: 20px;
 }
 
-
-
-.hidden{
-    display: none;   
-}
-
-.attribution{
+.rating-success-description {
     text-align: center;
-    color:  hsl(0, 0%, 100%);
 }
 
-.attribution a{
+.rating-score{
+    background-color: hsl(210, 15%, 21%);
+    color: hsl(25, 97%, 53%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;    
+    letter-spacing: 1px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+
+.attribution a {
     color: hsl(25, 97%, 53%);
     text-decoration: none;
 }
