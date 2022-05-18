@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component | Rating</title>
@@ -13,7 +12,7 @@
 
 <body>
   <main>
-    <section class="rating">
+    <section class="rating rating-form">
       <div class="rating-icon-container">
         <img src="./images//icon-star.svg" class="rating-icon">
       </div>
@@ -25,20 +24,20 @@
         to help us improve our offering!
       </p>
       <div class="rating-options">
-        <button type="button" class="rating-option rating-selected">1</button>
-        <button type="button" class="rating-option">2</button>
-        <button type="button" class="rating-option">3</button>
-        <button type="button" class="rating-option">4</button>
-        <button type="button" class="rating-option">5</button>
+        <button type="button" onclick="toogleRating(this)" class="rating-option">1</button>
+        <button type="button" onclick="toogleRating(this)" class="rating-option">2</button>
+        <button type="button" onclick="toogleRating(this)" class="rating-option">3</button>
+        <button type="button" onclick="toogleRating(this)" class="rating-option">4</button>
+        <button type="button" onclick="toogleRating(this)" class="rating-option">5</button>
       </div>
-      <button type="submit" class="rating-submit">Submit</button>
+      <button type="submit" class="rating-submit" onclick="submitRating()">Submit</button>
     </section>
     <section class="rating rating-success hidden">
       <div class="rating-success-image">
         <img src="./images/illustration-thank-you.svg" alt="">
       </div>
       <p class="rating-score">
-        You selected 3 out of 5
+        You selected <span class="rating-choosed"></span> out of 5
       </p>
       <h1 class="rating-title">
         Thank you!
@@ -54,8 +53,33 @@
     </div>
   </main>
 
+  <script>
+    var rating = null;
+    var ratingFormSection = document.querySelector('section.rating-form')
+    var ratingSuccessSection = document.querySelector('section.rating-success')
+    var ratingOptions = document.getElementsByClassName('rating-option')
+    var ratingChoosed = document.querySelector('span.rating-choosed')
+
+    function submitRating(){
+      if (!rating) {
+        alert('Escolha uma opção') 
+        return;
+      }  
+      ratingSuccessSection.classList.remove('hidden')
+      ratingFormSection.classList.add('hidden')
+      ratingChoosed.innerText = rating
+    }
+
+    function toogleRating(option){
+      Array.from(ratingOptions).forEach(option => {
+        option.classList.remove('rating-selected')
+      });
+      rating = option.innerText
+      option.classList.add('rating-selected')
+    }
+
+  </script>
 
 </body>
-
 
 </html>

@@ -15,10 +15,6 @@ body {
     justify-content: center;
 }
 
-.hidden{
- display: none;   
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -29,9 +25,15 @@ main {
 
 .rating{
     background-color: hsl(213, 19%, 18%);
-    width: 450px;
     border-radius: 2rem;
     padding: 2.6rem;
+}
+
+.rating-form{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .rating-icon-container {
@@ -48,17 +50,18 @@ main {
 .rating-icon-container .rating-icon{
     width: 1.5rem;
 }
-rating-title {
+
+.rating-title {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
 }
 
-form p {
+.rating-description{
     font-size: 15px;
     color: hsl(217, 12%, 63%);
 }
 
-.numbers {
+.rating-options {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -67,7 +70,7 @@ form p {
     margin-bottom: 5px;
 }
 
-.number {
+.rating-option {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,16 +81,23 @@ form p {
     border: none;
     background-color: hsl(214, 15%, 28%);
     color: hsl(217, 12%, 63%);
-    opacity: 0.9;
+    color: hsl(0, 0%, 100%);
+
 }
 
-.number:hover {
+.rating-option:hover {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
 
-form .submit {
+.rating-selected{
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-submit {
+    width: 100%;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     display: flex;
@@ -97,11 +107,38 @@ form .submit {
     border-radius: 18px;
     font-weight: 700;
     border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-form .submit:hover {
+.rating-submit:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
     transition: background 0.4s ease, color 0.4s ease; 
     cursor: pointer;
+}
+
+.rating-success{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.hidden{
+    display: none;   
+}
+
+.attribution{
+    text-align: center;
+    color:  hsl(0, 0%, 100%);
+}
+
+.attribution a{
+    color: hsl(25, 97%, 53%);
+    text-decoration: none;
 }
