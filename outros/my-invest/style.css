@@ -1,0 +1,145 @@
+:root {
+  /* colors */
+  --brand: hsl(178, 100%, 50%);
+  --background: hsl(216, 41%, 45%);
+  --dark: hsl(216, 50%, 16%);
+  --cardBorder: hsl(215, 32%, 27%);
+  --light: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+/* header */
+header {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+}
+
+header a.brand {
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* main */
+.invest-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.invest-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.invest-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.invest-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invest-form-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invest-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.4rem;
+}
+
+.invest-form-group label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.invest-cards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
+.invest-card {
+  border: 1px solid black;
+  width: w;
+  height: w;
+}
+
+/* footer */
+footer {
+  color: var(--veryDarkBlueLine);
+  padding: 1rem 3rem;
+}
+
+footer a {
+  color: var(--light);
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--brand);
+  transition: padding 0.4s ease;
+}
+
+footer a:hover {
+  padding-bottom: 0.5rem;
+}
+
+/* buttons */
+.btn {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.6rem;
+  color: var(--dark);
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+.btn-primary {
+  background-color: var(--brand);
+}
+
+.btn-danger {
+  background-color: red;
+  color: var(--light);
+}
