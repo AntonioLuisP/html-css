@@ -155,13 +155,14 @@ footer a {
   font-weight: 400;
   font-size: 1.1rem;
   text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px solid var(--brand);
-  transition: padding 0.4s ease;
+  padding-top: 1px;
+  border-top: 1px solid var(--brand);
+  transition: all 0.4s ease;
 }
 
 footer a:hover {
-  padding-bottom: 0.5rem;
+  color: var(--brand);
+  padding-top: 0.5rem;
 }
 
 /* mobile */
