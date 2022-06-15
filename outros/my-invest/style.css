@@ -82,16 +82,16 @@ header a.brand {
 
 /* lista de cards */
 .invest-cards {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-/* cards */
+/* card */
 .invest-card {
-  flex: 1 0 300px;
+  width: 330px;
   border: 1px solid var(--cardBorder);
-  max-width: calc(25% - 1em);
   padding: 1rem;
   border-radius: 8px;
   display: flex;
@@ -125,6 +125,10 @@ header a.brand {
   overflow: hidden;
 }
 
+.inves-card-quantidade {
+  font-size: 2rem;
+}
+
 .invest-card-value::after {
   content: " reais";
   text-transform: lowercase;
@@ -137,14 +141,6 @@ header a.brand {
   text-transform: lowercase;
   font-weight: 400;
   font-size: 1rem;
-}
-
-.inves-card-quantidade {
-  font-weight: 40;
-  font-size: 2rem;
-  word-wrap: break-word;
-  text-transform: uppercase;
-  overflow: hidden;
 }
 
 /* footer */
@@ -170,9 +166,12 @@ footer a:hover {
 
 /* mobile */
 @media screen and (max-width: 800px) {
+  .invest-cards {
+    flex-direction: column;
+  }
+
   .invest-card {
     width: 100%;
-    display: block;
   }
 }
 
