@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightcyan;
+}
+
+.parent {
+  background-color: rgb(68, 202, 247);
+  height: 200vh;
+
+  padding: 20px;
+  margin: 30px;
+  position: static;
+  /* relative: mesmo que static mas permite alterar a posicao em relacao a original*/
+}
+
+.chield {
+  padding: 20px;
+  position: static;
+  /* static: default position e deixa o elemento na posicao original */
+}
+
+.one {
+  background-color: rgb(94, 235, 94);
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  /* absolute: permite alterar a posição deste ao seu elemento pai que tiver position diferente de static*/
+}
+
+.two {
+  background-color: rgb(237, 48, 48);
+  position: fixed;
+  top: 150px;
+}
+
+.three {
+  background-color: rgb(252, 118, 141);
+  position: sticky;
+  top: 0;
+  /* absolute: vira fixed ao chegar na posicao determinada */
+}

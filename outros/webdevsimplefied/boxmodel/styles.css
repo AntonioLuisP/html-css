@@ -1,0 +1,25 @@
+/* limpando o css */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box; /* faz o tamanho imposto ser o tamanho real do elemento */
+}
+
+.box {
+  padding: 10px;
+  margin: 30px;
+  border: 1px solid black;
+}
+
+.box1 {
+  font-size: 32px;
+  height: 3em;
+  background-color: rgb(255, 66, 66);
+}
+
+.box2 {
+  font-size: 32px;
+  height: 3rem;
+  background-color: rgb(127, 127, 255);
+}
